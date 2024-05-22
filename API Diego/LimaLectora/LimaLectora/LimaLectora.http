@@ -1,0 +1,6 @@
+@LimaLectora_HostAddress = http://localhost:5017
+
+GET {{LimaLectora_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

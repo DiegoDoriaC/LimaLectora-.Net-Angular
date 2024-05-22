@@ -1,0 +1,124 @@
+1 - Creacion de capas (nomenclatura)
+	- Capa principal 
+	- DAL (capa de datos)
+	- BLL (capa de negocio)
+	- Model (capa de modelos o entidades)
+	- IOC (inyeccion de dependencias)
+	- DTO (capa para los DTOs)
+	- Utility (capa para el mapper)
+
+2 - Eliminacion de las clases dentro de las capas
+
+3 - Colocar a la capa Model como proyecto de inicio para
+	poder instalar el Entity Framework
+
+4 - instalar Microsoft.EntityFrameworkCore.SqlServer
+	     Microsoft.EntityFrameworkCore.Tools
+
+5 - Migrar la BD previamente creada en Herramientas > Administrador de paquetes NuGet > Consola
+		Scaffold-DbContext "server=DESKTOP-3SVGOT8\SQLEXPRESS; DataBase= ?;Integrated Security=true; 				Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer (seleccionar el proyecto predeterminado "Model")
+
+6 - Volver a establecer la capa .API con proyecto de inico
+
+7 - Crear carpeta DBContext en la capa .DAL, llevar ahi el DBContext del ORM 
+
+8 - Agregar Referencias (Guia)
+	* DAL - Model
+	* BLL - DAL, Model, DTO y Utility
+	* IOC - BLL, DAL y Utility
+	* Utility - DTO y Model
+	* API - BLL, DTO y IOC
+
+9 - Llevarse la cadena de connexion del DBContext al appsetting.json
+
+10 - En la capa .IOC agregar una clase 'Dependencia', convertirlo en public static y agregar el siguiente metodo por 'Metodos de extencion'
+	public static void InyectarDependencias(this IServiceCollection services, IConfiguration configuration)
+	{
+    		services.AddDbContext<LimalectoraContext>(options =>
+    		{
+        		options.UseSqlServer(configuration.GetConnectionString("cadenaSQL"));
+    		});
+	}
+11 - En program.cs agregar la referencia al .IOC y hacer build builder.Services.InyectarDependencias(builder.Configuration); arriva de var app = builder.Build()
+
+	------------------------- FINAL DEL VIDEO 2 -------------------------
+
+	------------------------- INICIO DEL VIDEO 3 -------------------------
+12 - Crear carpetas e interface de acceso a datos "CRUD en español" en: .DAL > Repositorios > Contrato   => IGenericRepository<TModel> where TModel : class
+
+13 - Crear ahi mismo la Interface: IComprobanteRepository que extiende de IGenericRepository<Comprobante>
+
+14 - Dentro de la carpeta repositorios crear la clase GenericRepository, agregar la inyeccion LimalectoraContext _context e impletar la interfaz IGenericRepository<TModelo> where TModelo : class
+
+15 - Configurar el CRUD usando try - catch y async
+
+16 - Crear una clase en Repositorios de nombre VentaRepository : GenericRepository<Venta>, IVentaRepository y agregar la logica para las ventas, osea que al vender un producto reste el stock, esas cosas
+
+17 - Creas las dependecias a los repositorios previamente creados debajo de la dependencia que va hacia la base de datos para poder usarlos desde cualquier parte del proyecto:
+	services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+	services.AddScoped<IComprobanteRepository, ComprobanteRepository>();
+
+18 - Levantar la aplicacion para ver si funciona correctamente
+
+	------------------------- FINAL DEL VIDEO 3 -------------------------
+
+	------------------------- INICIO DEL VIDEO 4 -------------------------
+19 - Creacion de DTOs
+
+20 - Instalacion de automaper y automapper.DependencyInjection
+
+21 - Creacion de la clase AutoMapperProfile
+
+22 - Agregar las referencias y mappear las clases
+
+23 - Agregar las dependencias en la capa IoC
+
+	------------------------- FINAL DEL VIDEO 4 -------------------------
+
+	------------------------- INICIO DEL VIDEO 5 -------------------------
+
+24- Crear la siguiente estructura de carpetas en la capa BLL > Servicios > Contrato
+
+25 - Crear las interfaces en la carpeta contrato
+
+26 - Implementar las interfaces en la carpeta servicios
+
+27 - Agregar las dependencias de la capa BLL en la capa de servicios IoC con el patron scoped
+
+	------------------------- FINAL DEL VIDEO 5 --------------------------
+
+	------------------------- INICIO DEL VIDEO 6 -------------------------
+
+28 - Trabajar en la capa API
+
+29 - Eliminar el controlador por defecto
+
+30 - Agregar la parpeta Utilidad en la capa API
+
+31 - Crear la clase Response.cs que servira como respuesta a las solicitudes de la APIs
+
+32 - Convertir la clase Response en generica para porder recibir cualquier objeto
+
+33 - Agregar los status, value y msg
+
+34 - Agregar controladores para todos los service
+
+35 - Ya esta!, no necesitas agregar dependencias al programs.cs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

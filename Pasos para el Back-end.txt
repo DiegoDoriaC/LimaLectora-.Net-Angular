@@ -16,7 +16,7 @@
 	     Microsoft.EntityFrameworkCore.Tools
 
 5 - Migrar la BD previamente creada en Herramientas > Administrador de paquetes NuGet > Consola
-		Scaffold-DbContext "server=DESKTOP-3SVGOT8\SQLEXPRESS; DataBase= ?;Integrated Security=true; 				Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer (seleccionar el proyecto predeterminado "Model")
+		Scaffold-DbContext "server=DESKTOP-3SVGOT8\SQLEXPRESS; DataBase= ?;Integrated Security=true;Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer (seleccionar el proyecto predeterminado "Model")
 
 6 - Volver a establecer la capa .API con proyecto de inico
 
@@ -104,6 +104,160 @@
 34 - Agregar controladores para todos los service
 
 35 - Ya esta!, no necesitas agregar dependencias al programs.cs
+
+36 - No te olvides de configurar los CRODS
+
+	------------------------- FINAL DEL VIDEO 6 --------------------------
+
+	------------------------- INICIO DEL VIDEO 7 -------------------------
+
+37 - Crear la aplicacion Angular desde la CMD con el comando ng new [nombreProyecto]
+
+38 - Instalar bibliotecas:
+
+	- ng add @angular/material@14.2.7
+	- npm install sweetalert2@11.6.16
+	- npm install moment@2.29.4 (Para trabajar con las fechas)
+	- npm install @angular/material-moment-adapter@14.2.7 (la version debe ser igual al de angular-material)
+	- npm install chart.js@3.9.1 (Para trabajar con graficos)
+	- npm install xlsx@0.18.5 (Para generar reportes excel)
+
+39 - Configurar el endpoint de la API en los environments
+
+38 - Crear las Interfaces con ng g interace Interface para todos los DTOs y para el response tambien
+
+39 - Crear los servicios que van a ser las consultas a las APIs
+
+40 - En los servicios importar:
+
+	- import { HttpClient } from '@angular/common/http' - (El puente para hacer consultas a las APIs).
+	- import { observable } from 'rxjs' - (para poder recibir las respuestas de las APIs).
+	- import { environment } - (Aqui adentro esta la direccion de nuestra API).
+	- import { ResponseApi } - (Para trabajar con las respuesta de las APIs).
+	- import { Cliente } - (Para tener acceso a los atributos).
+
+41 - En la clase crear la variable urlAPI y concatenar la direccion de la API con el servicio en el que se encuentre
+
+42 - Inyectar la dependecia de HttpClient
+
+43 - Crear los metodos crud que sean necesarios, ejemplo:
+	
+    editar(request:Cliente):Observable<ResponseApi>{
+    	return this.http.put<ResponseApi>(`${this.urlAPI}Actualizar`, request)
+    }
+
+44 - Crear un modulo shared para tenerlo separado del modulo principal de la aplicacion con ng g m Reutilizable/Shared y agregar las siguiente referencias
+
+	//Componentes para trabajar con formularios reactivos
+	- import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+	- import { HttpClientModule } from '@angular/common/http';
+
+	//Componentes de Angular Material
+	- import { MatCardModule } from '@angular/material/card'; //Para trabajar con tarjetas
+	- import { MatInputModule } from '@angular/material/input'; //Para trabajar con inputs
+	- import { MatSelectModule } from '@angular/material/select'; //Para trabajar con los select
+	- import { MatProgressBarModule } from '@angular/material/progress-bar'; //Barras de progreso como loading
+	- import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; //Cuando se esta cargando
+	- import { MatGridListModule } from '@angular/material/grid-list'; //Para trabajar con filas y columnas
+	- 
+	- import { LayoutModule } from '@angular/cdk/layout'; //Para trabajar con contenedores laterales
+	- import { MatToolbarModule } from '@angular/material/toolbar'; //Para mostrar u ocultar el contenedor lateral
+	- import { MatSidenavModule } from '@angular/material/sidenav'; //
+	- import { MatButtonModule } from '@angular/material/button'; //Para trabajar con boton
+	- import { MatIconModule } from '@angular/material/icon'; //Para trabajar con los iconos de angular
+	- import { MatListModule } from '@angular/material/list'; //Para trabajar con listas de angular
+	- 
+	- import { MatTableModule } from '@angular/material/table';  //Para trabajar con tablas
+	- import { MatPaginatorModule } from '@angular/material/paginator'; //Para trabajar con paginacion de tablas
+	- import { MatDialogModule } from '@angular/material/dialog'; //Para trabajar con los dialogos parecidos a los alert
+	- import { MatSnackBarModule } from '@angular/material/snack-bar'; //Para mostrar pequeñas alertas
+	- import { MatTooltipModule } from '@angular/material/tooltip'; //Para mostrar diminutos mensajes al hacer hover
+	- import { MatAutocompleteModule } from '@angular/material/autocomplete'; //Para el autocompletado
+	- import { MatDatepickerModule } from '@angular/material/datepicker'; //Para trabajar con calendarios
+	- 
+	- import { MatNativeDateModule } from '@angular/material/core'; //Nos permite trabajar con las fechas
+	- import { MomentDateModule } from '@angular/material-moment-adapter'; //Cambiar el formato de las fechas
+
+45 - Exportar todos los modulos y añadir MatDatepickerModule y MatNativeDateModule como providers
+
+46 - Generar carpeta Components y los componentes login y layout
+
+47 - Dentro de layout generar un modulo agregandole --routing, crear la carpeta Pages y generar todos los componentes dentro
+
+48 - Configurar el ruteo de las paginas en layout y tambien el ruteo principal con el loadChildren
+
+49 - Desde el layout-module y app-module importar el shared module para que todas la paginas tengan acceso a ellas
+
+50 - Trabajar en el html del layout
+
+51 - Crear el servicio Utilidad en Reutilizable
+
+52 - Importar los paquetes para que puede trabajar correctamente, ejemplo:
+	
+	- import { MatSnackBar } from '@angular/material/snack-bar';
+	- import { Sesion } from '../Interfaces/sesion';
+	- import { JsonPipe } from '@angular/common';
+
+53 - Inyectar el MatSnackBar para mostrar las mini-alertas
+
+54 - Crear el metodo para mostrar la alerta, guardar sesion - obtener sesion - eliminar sesion
+
+55 - Trabajar en el componente y html del login
+
+56 - Importar lo siguiente
+
+	- import { FormBuilder, FormGroup, Validator, Validators } from '@angular/forms';
+	- import { Router } from '@angular/router';
+	- import { Login } from 'src/app/Interfaces/login';
+	- import { UsuarioService } from 'src/app/Services/usuario.service';
+	- import { UtilidadService } from 'src/app/Reutilizable/utilidad.service';
+
+57 - Configurar el formulario
+
+58 - Crear el metodo iniciarSesion y trabajr en el html
+
+
+	------------------------- FINAL DEL VIDEO 9 --------------------------
+
+	------------------------- INICIO DEL VIDEO 10 -------------------------
+
+59 - Trabajar en la creacion del modulo cliente
+
+60 - Dentro del layout crear la carpeta Modales y crear el componente para el modal del cliente
+
+61 - Importar inject (Sirve para poder recibir datos desde otro componente)
+
+62 - Importar lo siguiente para manipular los datos recibidos tambien los servicios e interfaces
+
+	- import { MatDialogRef, MAT_DIALOG_DATA }
+
+63 - Crear las variables para el formulario
+
+64 - Inyectar los servicios en el formulario
+
+65 - Agregar las validaciones a los campos del formulario
+
+66 - Cambiar el texto de los botones
+
+67 - Llenar de datos los input si se tiene la data
+
+68 - Crear el metodo guardarEditarCliente() creando la constante _cliente de tipo Cliente
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

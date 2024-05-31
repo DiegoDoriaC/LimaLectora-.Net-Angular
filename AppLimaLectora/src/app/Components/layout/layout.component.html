@@ -1,0 +1,51 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <h1>Lima Lectora</h1>
+        <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span style="flex: 1 1 auto;"></span>
+        <label style="font-size: 14px; ">Usuario | Correo</label>
+        <button mat-icon-button>
+            <mat-icon>logout</mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav opened="true" mode="side" style="width: 200px;">
+        <mat-nav-list>
+
+            <mat-list-item routerLink="/pages/dashboard">
+                <mat-icon mat-list-icon>dashboard</mat-icon>
+                <div mat-line>DashBoard</div>
+            </mat-list-item>
+            <mat-list-item routerLink="/pages/cliente">
+                <mat-icon mat-list-icon>group</mat-icon>
+                <div mat-line>Clientes</div>
+            </mat-list-item>
+            <mat-list-item routerLink="/pages/empleado">
+                <mat-icon mat-list-icon>badge</mat-icon>
+                <div mat-line>Empleados</div>
+            </mat-list-item>
+            <mat-list-item routerLink="/pages/productos">
+                <mat-icon mat-list-icon>book_4</mat-icon>
+                <div mat-line>Libros</div>
+            </mat-list-item>
+            <mat-list-item routerLink="/pages/historial_venta">
+                <mat-icon mat-list-icon>edit_note</mat-icon>
+                <div mat-line>Recepciones</div>
+            </mat-list-item>
+            <mat-list-item routerLink="/pages/historial_venta">
+                <mat-icon mat-list-icon>store</mat-icon>
+                <div mat-line>Ventas</div>
+            </mat-list-item>
+
+        </mat-nav-list>        
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 90vh;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

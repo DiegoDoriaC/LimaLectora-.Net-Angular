@@ -1,0 +1,48 @@
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.IOC.deps.json
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.IOC.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.IOC.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.AssemblyInfoInputs.cache
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.AssemblyInfo.cs
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.csproj.CoreCompileInputs.cache
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.sourcelink.json
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\refint\LimaLectora.IOC.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\ref\LimaLectora.IOC.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.csproj.AssemblyReference.cache
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.BLL.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.DAL.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.DTO.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.Model.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.Utility.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.BLL.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.DAL.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.Utility.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.DTO.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.Model.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\API Diego\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLect.C7DB40C6.Up2Date
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.IOC.deps.json
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.IOC.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.IOC.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.BLL.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.DAL.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.DTO.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.Model.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.Utility.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.BLL.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.DAL.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.Utility.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.DTO.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\bin\Debug\net8.0\LimaLectora.Model.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.csproj.AssemblyReference.cache
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.AssemblyInfoInputs.cache
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.AssemblyInfo.cs
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.csproj.CoreCompileInputs.cache
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.sourcelink.json
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLect.C7DB40C6.Up2Date
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\refint\LimaLectora.IOC.dll
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\LimaLectora.IOC.pdb
+C:\Users\Diego D\Desktop\LimaLectora .Net Angular\LimaLectora\LimaLectora.IOC\obj\Debug\net8.0\ref\LimaLectora.IOC.dll

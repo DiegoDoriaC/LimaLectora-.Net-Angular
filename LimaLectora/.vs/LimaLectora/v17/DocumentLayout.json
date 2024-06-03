@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Diego D\\Desktop\\LimaLectora .Net Angular\\LimaLectora\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEE2C34E-3D7A-41D4-873B-DC6F2EB30DA0}|LimaLectora\\LimaLectora.csproj|c:\\users\\diego d\\desktop\\limalectora .net angular\\limalectora\\limalectora\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEE2C34E-3D7A-41D4-873B-DC6F2EB30DA0}|LimaLectora\\LimaLectora.csproj|solutionrelative:limalectora\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 244,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego D\\Desktop\\LimaLectora .Net Angular\\LimaLectora\\LimaLectora\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "LimaLectora\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Diego D\\Desktop\\LimaLectora .Net Angular\\LimaLectora\\LimaLectora\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "LimaLectora\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T16:57:27.448Z",
+              "EditorCaption": ""
             }
           ]
         }

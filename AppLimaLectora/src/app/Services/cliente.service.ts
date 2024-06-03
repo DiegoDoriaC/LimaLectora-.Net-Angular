@@ -19,7 +19,7 @@ export class ClienteService {
   }
 
   registrar(request:Cliente):Observable<ResponseApi>{
-    return this.http.post<ResponseApi>(`${this.urlAPI}Registrar/`, request)
+    return this.http.post<ResponseApi>(`${this.urlAPI}Registrar`,request)
   }
 
   buscarNombre(nombre:string):Observable<ResponseApi>{

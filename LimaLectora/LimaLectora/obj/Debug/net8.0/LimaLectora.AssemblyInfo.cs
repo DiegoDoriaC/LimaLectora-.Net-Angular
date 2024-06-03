@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LimaLectora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e439457318f33a152b91c1b88d688ccf535823b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fee1f5590ae573cd6aebb34d1956b68f0c5d19ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("LimaLectora")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LimaLectora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

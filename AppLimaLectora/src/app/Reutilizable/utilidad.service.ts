@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { JsonPipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -15,18 +14,6 @@ export class UtilidadService {
       verticalPosition:'top',
       duration: 2400
     })
-  }
-
-  guardarSesionUsuario(){
-
-  }
-
-  obtenerSesionUsuario(){
-
-  }
-
-  eliminarSesionUsuario(){
-    
   }
 
 }

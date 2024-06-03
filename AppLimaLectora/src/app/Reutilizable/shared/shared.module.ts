@@ -39,6 +39,9 @@ import { MomentDateModule } from '@angular/material-moment-adapter'; //Cambiar e
     CommonModule
   ],
   exports:[
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
     LayoutModule,
     MatCardModule,
     MatInputModule,

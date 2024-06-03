@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validator, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Cliente } from 'src/app/Interfaces/cliente';
 import { ClienteService } from 'src/app/Services/cliente.service';
@@ -65,7 +65,10 @@ export class ModalClienteComponent implements OnInit {
       esActivo: parseInt(this.formularioCliente.value.esActivo)
     }
 
+    
     if(this.datosCliente == null){
+      console.log('registrar')
+      console.log(_cliente)
       this._clienteServicio.registrar(_cliente).subscribe({
         next:(data) => {
           if(data.status){
@@ -76,10 +79,11 @@ export class ModalClienteComponent implements OnInit {
             this._utilidadServicio.mostrarAlerta('No se pudo registrar el cliente', 'Error')
           }
         },
-        error:(e) => {}
+        error:(e) => {console.log(e)}
       })
     }
     else{
+      console.log('editar')
       this._clienteServicio.editar(_cliente).subscribe({
         next:(data) => {
           if(data.status){
